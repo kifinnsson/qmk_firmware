@@ -15,6 +15,78 @@ enum custom_keycodes {
   KI_SIG,
 };
 
+enum combos {
+    // letter combos
+    TN_B,
+    AN_J,
+    EO_EXLM,
+    EO_S_AT,
+    RS_F,
+    TI_G,
+    AT_P,
+    NO_L,
+    RE_Z,
+    RN_K,
+    EI_U,
+    AR_W,
+    SO_QUOT,
+    SO_S_DQUO,
+    ST_D,
+    NI_Y,
+    AS_X,
+    TO_QUES,
+    TO_S_SLSH,
+    SN_M,
+    AE_Q,
+    IO_SCLN,
+    IO_S_COLN,
+    SE_COMM,
+    SE_S_LT,
+    RI_DOT,
+    RI_S_GT,
+    AO_BSPC,
+    AI_LPRN,
+    AI_S_LBRC,
+    RO_RPRN,
+    RO_S_RBRC,
+    SI_MINS,
+    SI_S_UNDS,
+    ARST_TAB,
+    NEIO_ENT,
+    // number combos
+    N_34_5,
+    N_78_6,
+    N_l7_GRV,
+    N_17_S_TILD,
+    N_80_EXLM,
+    N_80_S_AT,
+    N_14_LCBR,
+    N_70_RCBR,
+    N_30_QUOT,
+    N_30_S_DQUO,
+    N_47_EQL,
+    N_47_S_PLUS,
+    N_40_QUES,
+    N_40_S_SLSH,
+    N_18_BSLS,
+    N_18_S_PIPE,
+    N_90_SCLN,
+    N_90_S_COLN,
+    N_38_COMM,
+    N_38_LT,
+    N_29_DOT,
+    N_29_S_GT,
+    N_10_BSPC,
+    N_19_LPRN,
+    N_19_S_LBRC,
+    N_20_RPRN,
+    N_20_S_RBRC,
+    N_39_MINS,
+    N_39_S_UNDS,
+    N_1234_TAB,
+    N_7890_ENT
+}
+
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
 #define EXTEND MO(_EXTEND)
@@ -114,3 +186,5 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   }
   return true;
 }
+
+//combos for arstneio chorded layout
