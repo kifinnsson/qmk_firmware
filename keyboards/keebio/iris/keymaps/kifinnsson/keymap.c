@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_LCBR, KC_PIPE,
+     _______, CTRL_A,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_LCBR, KC_PIPE,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      _______, UNDO,    CUT,     COPY,    PASTE,   XXXXXXX, _______,          _______, XXXXXXX, XXXXXXX, XXXXXXX, KC_HOME, KC_END,  _______,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      _______, KC_ESC,  KC_WH_U, KC_WBAK, KC_WFWD, KC_MS_U,                            KC_PGUP, KC_HOME, KC_UP,   KC_END,  KC_DEL,  KC_ESC,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, KC_LALT, KC_WH_D, KC_LSFT, KC_LCTL, KC_MS_D,                            KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC, KC_APP,
+     _______, CTRL_A,  KC_WH_D, KC_LSFT, KC_LCTL, KC_MS_D,                            KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC, KC_APP,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      _______, UNDO,    CUT,     COPY,    PASTE,   KC_BTN1, _______,          _______, KC_BTN2, KC_BTN3, KC_MS_L, KC_MS_R, XXXXXXX, _______,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
