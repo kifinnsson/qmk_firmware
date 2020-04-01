@@ -2,6 +2,8 @@
 // https://www.reddit.com/r/olkb/comments/cqt9ff/qmk_making_a_chorded_keymap/
 // the other option is to include the gboards engine
 // https://github.com/germ/qmk_firmware/tree/master/keyboards/gboards/engine
+// http://combos.gboards.ca/docs/custom/
+// https://github.com/qmk-combos/combos
 
 // one key chords
 #define CHORD_1 KC_B
