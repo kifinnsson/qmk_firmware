@@ -15,78 +15,6 @@ enum custom_keycodes {
   KI_SIG,
 };
 
-enum combos {
-    // letter combos
-    TN_B,
-    AN_J,
-    EO_EXLM,
-    EO_S_AT,
-    RS_F,
-    TI_G,
-    AT_P,
-    NO_L,
-    RE_Z,
-    RN_K,
-    EI_U,
-    AR_W,
-    SO_QUOT,
-    SO_S_DQUO,
-    ST_D,
-    NI_Y,
-    AS_X,
-    TO_QUES,
-    TO_S_SLSH,
-    SN_M,
-    AE_Q,
-    IO_SCLN,
-    IO_S_COLN,
-    SE_COMM,
-    SE_S_LT,
-    RI_DOT,
-    RI_S_GT,
-    AO_BSPC,
-    AI_LPRN,
-    AI_S_LBRC,
-    RO_RPRN,
-    RO_S_RBRC,
-    SI_MINS,
-    SI_S_UNDS,
-    ARST_TAB,
-    NEIO_ENT,
-    // number combos
-    N_34_5,
-    N_78_6,
-    N_l7_GRV,
-    N_17_S_TILD,
-    N_80_EXLM,
-    N_80_S_AT,
-    N_14_LCBR,
-    N_70_RCBR,
-    N_30_QUOT,
-    N_30_S_DQUO,
-    N_47_EQL,
-    N_47_S_PLUS,
-    N_40_QUES,
-    N_40_S_SLSH,
-    N_18_BSLS,
-    N_18_S_PIPE,
-    N_90_SCLN,
-    N_90_S_COLN,
-    N_38_COMM,
-    N_38_LT,
-    N_29_DOT,
-    N_29_S_GT,
-    N_10_BSPC,
-    N_19_LPRN,
-    N_19_S_LBRC,
-    N_20_RPRN,
-    N_20_S_RBRC,
-    N_39_MINS,
-    N_39_S_UNDS,
-    N_1234_TAB,
-    N_7890_ENT
-}
-
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
 #define EXTEND MO(_EXTEND)
@@ -188,3 +116,181 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 //combos for arstneio chorded layout
+enum combos {
+  A_N_J,
+  A_T_P,
+  A_R_W,
+  A_S_X,
+  A_E_Q,
+  A_O_BSPC,
+  A_I_LPRN,
+  A_I_LSFT_LBRC,
+  A_I_RSFT_LBRC,
+  R_S_F,
+  R_E_Z,
+  R_N_K,
+  R_T_C,
+  R_I_DOT,
+  R_O_RPRN,
+  R_O_LSFT_RBRC,
+  R_O_RSFT_RBRC,
+  S_O_QUOT,
+  S_O_QUOT,
+  S_T_D,
+  S_N_M,
+  S_E_COMM,
+  S_I_MINS,
+  T_N_B,
+  T_I_G,
+  T_O_QUES,
+  T_O_LSFT_SLSH,
+  T_O_RSFT_SLSH,
+  T_E_V,
+  N_O_L,
+  N_E_H,
+  N_I_Y,
+  E_O_EXLM,
+  E_O_LSFT_AT,
+  E_O_RSFT_AT,
+  E_I_U,
+  I_O_SCLN,
+  A_R_S_T_TAB,
+  N_E_I_O_ENT,
+  A_R_S_T_N_E_I_O_SPC,
+
+};
+
+const uint16_t PROGMEM a_n_j[] = { KC_A, KC_N, COMBO_END};
+const uint16_t PROGMEM a_t_p[] = { KC_A, KC_T, COMBO_END};
+const uint16_t PROGMEM a_r_w[] = { KC_A, KC_R, COMBO_END};
+const uint16_t PROGMEM a_s_x[] = { KC_A, KC_S, COMBO_END};
+const uint16_t PROGMEM a_e_q[] = { KC_A, KC_E, COMBO_END};
+const uint16_t PROGMEM a_o_bspc[] = { KC_A, KC_O, COMBO_END};
+const uint16_t PROGMEM a_i_lprn[] = { KC_A, KC_I, COMBO_END};
+const uint16_t PROGMEM a_i_lsft_lbrc[] = { KC_A, KC_I, KC_LSFT, COMBO_END};
+const uint16_t PROGMEM a_i_rsft_lbrc[] = { KC_A, KC_I, KC_RSFT, COMBO_END};
+const uint16_t PROGMEM r_s_f[] = { KC_R, KC_S, COMBO_END};
+const uint16_t PROGMEM r_e_z[] = { KC_R, KC_E, COMBO_END};
+const uint16_t PROGMEM r_n_k[] = { KC_R, KC_N, COMBO_END};
+const uint16_t PROGMEM r_t_c[] = { KC_R, KC_T, COMBO_END};
+const uint16_t PROGMEM r_i_dot[] = { KC_R, KC_I, COMBO_END};
+const uint16_t PROGMEM r_o_rprn[] = { KC_R, KC_O, COMBO_END};
+const uint16_t PROGMEM r_o_lsft_rbrc[] = { KC_R, KC_O, KC_LSFT, COMBO_END};
+const uint16_t PROGMEM r_o_rsft_rbrc[] = { KC_R, KC_O, KC_RSFT, COMBO_END};
+const uint16_t PROGMEM s_o_quot[] = { KC_S, KC_O, COMBO_END};
+const uint16_t PROGMEM s_t_d[] = { KC_S, KC_T, COMBO_END};
+const uint16_t PROGMEM s_n_m[] = { KC_S, KC_N, COMBO_END};
+const uint16_t PROGMEM s_e_comm[] = { KC_S, KC_E, COMBO_END};
+const uint16_t PROGMEM s_i_mins[] = { KC_S, KC_I, COMBO_END};
+const uint16_t PROGMEM t_n_b[] = { KC_T, KC_N, COMBO_END};
+const uint16_t PROGMEM t_i_g[] = { KC_T, KC_I, COMBO_END};
+const uint16_t PROGMEM t_o_ques[] = { KC_T, KC_O, COMBO_END};
+const uint16_t PROGMEM t_o_lsft_slsh[] = { KC_T, KC_O, KC_LSFT, COMBO_END};
+const uint16_t PROGMEM t_o_rsft_slsh[] = { KC_T, KC_O, KC_RSFT, COMBO_END};
+const uint16_t PROGMEM t_e_v[] = { KC_T, KC_E, COMBO_END};
+const uint16_t PROGMEM n_o_l[] = { KC_N, KC_O, COMBO_END};
+const uint16_t PROGMEM n_e_h[] = { KC_N, KC_E, COMBO_END};
+const uint16_t PROGMEM n_i_y[] = { KC_N, KC_I, COMBO_END};
+const uint16_t PROGMEM e_o_exlm[] = { KC_E, KC_O, COMBO_END};
+const uint16_t PROGMEM e_o_lsft_at[] = { KC_E, KC_O, KC_LSFT, COMBO_END};
+const uint16_t PROGMEM e_o_rsft_at[] = { KC_E, KC_O, KC_RSFT, COMBO_END};
+const uint16_t PROGMEM e_i_u[] = { KC_E, KC_I, COMBO_END};
+const uint16_t PROGMEM i_o_scln[] = { KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM a_r_s_t_tab[] = { KC_A, KC_R, KC_S, KC_T, COMBO_END};
+const uint16_t PROGMEM n_e_i_o_ent[] = { KC_N, KC_E, KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM a_r_s_t_n_e_i_o_spc[] = { KC_A, KC_R, KC_S, KC_T, KC_N, KC_E, KC_I, KC_O, COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+  //
+  // Chorded ARSTNEIO Alphas
+  //
+  // A (HOME)
+  // B (T+N)
+  [T_N_B] = COMBO(t_n_b_combo, KC_B),
+  // C (R+T)
+  [R_T_C] = COMBO(r_t_c_combo, KC_C),
+  // D (S+T)
+  [S_T_D] = COMBO(s_t_d_combo, KC_D),
+  // E (HOME)
+  // F (R+S)
+  [R_S_F] = COMBO(r_s_f_combo, KC_F),
+  // G (T+I)
+  [T_I_G] = COMBO(t_i_g_combo, KC_G),
+  // H (N+E)
+  [N_E_H] = COMBO(n_e_h_combo, KC_H),
+  // I (HOME)
+  // J (A+N)
+  [A_N_J] = COMBO(a_n_j_combo, KC_J),
+  // K (R+N)
+  [R_N_K] = COMBO(r_n_k_combo, KC_K),
+  // L (N+O)
+  [N_O_L] = COMBO(n_o_l_combo, KC_L),
+  // M (S+N)
+  [S_N_M] = COMBO(s_n_m_combo, KC_M),
+  // N (HOME)
+  // O (HOME)
+  // P (A+T)
+  [A_T_P] = COMBO(a_t_p_combo, KC_P),
+  // Q (A+E)
+  [A_E_Q] = COMBO(a_e_q_combo, KC_Q),
+  // R (HOME)
+  // S (HOME)
+  // T (HOME)
+  // U (E+I)
+  [E_I_U] = COMBO(e_i_u_combo, KC_U),
+  // V (T+E)
+  [T_E_V] = COMBO(t_e_v_combo, KC_V),
+  // W (A+R)
+  [A_R_W] = COMBO(a_r_w_combo, KC_W),
+  // X (A+S)
+  [A_S_X] = COMBO(a_s_x_combo, KC_X),
+  // Y (N+I)
+  [N_I_Y] = COMBO(n_i_y_combo, KC_Y),
+  // Z (R+E)
+  [R_E_Z] = COMBO(r_e_z_combo, KC_Z),
+  //
+  // Chorded ARSTNEIO Characters
+  //
+  // Backspace (A+O)
+  [A_O_BSPC] = COMBO(a_o_bspc_combo, KC_BSPC),
+  // ; (I+O)
+  [I_O_SCLN] = COMBO(i_o_scln_combo, KC_SCLN),
+  // , (S+E)
+  [S_E_COMM] = COMBO(s_e_comm_combo, KC_COMM),
+  // . (R+I)
+  [R_I_DOT] = COMBO(r_i_dot_combo, KC_DOT),
+  // ' (S+O)
+  [S_O_QUOT] = COMBO(s_o_quot_combo, KC_QUOT),
+  // - (S+I)
+  [S_I_MINS] = COMBO(s_i_mins_combo, KC_MINS),
+  // ? (T+O)
+  [T_O_QUES] = COMBO(t_o_ques_combo, KC_QUES),
+  // ! (E+O)
+  [E_O_EXLM] = COMBO(e_o_exlm_combo, KC_EXLM),
+  // @ (E+O+Shift)
+  [E_O_LSFT_AT] = COMBO(e_o_lsft_at_combo, KC_AT),
+  [E_O_RSFT_AT] = COMBO(e_o_rsft_at_combo, KC_AT),
+  // / (T+O+Shift)
+  [T_O_LSFT_SLSH] = COMBO(t_o_lsft_slsh_combo, KC_SLSH),
+  [T_O_RSFT_SLSH] = COMBO(t_o_rsft_slsh_combo, KC_SLSH),
+  // ( (A+I)
+  [A_I_LPRN] = COMBO(a_i_lprn_combo, KC_LPRN),
+  // ) (R+O)
+  [R_O_RPRN] = COMBO(r_o_rprn_combo, KC_RPRN),
+  // [ (A+I+Shift)
+  [A_I_LSFT_LBRC] = COMBO(a_i_lsft_lbrc_combo, KC_LBRC),
+  [A_I_RSFT_LBRC] = COMBO(a_i_rsft_lbrc_combo, KC_LBRC),
+  // ] (R+O+Shift)
+  [R_O_LSFT_RBRC] = COMBO(r_o_lsft_rbrc_combo, KC_RBRC),
+  [R_O_RSFT_RBRC] = COMBO(r_o_rsft_rbrc_combo, KC_RBRC),
+  //
+  // Chorded ARSTNEIO Whitespace
+  //
+  // <TAB> (A+R+S+T)
+  [A_R_S_T_TAB] = COMBO(a_r_s_t_tab_combo, KC_TAB),
+  // <ENTER> (N+E+I+O)
+  [N_E_I_O_ENT] = COMBO(n_e_i_o_ent_combo, KC_ENT),
+  // <SPACE> (A+R+S+T+N+E+I+O)
+  [A_R_S_T_N_E_I_O_SPC] = COMBO(a_r_s_t_n_e_i_o_spc_combo, KC_SPC),
+
+};
