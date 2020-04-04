@@ -1,5 +1,8 @@
 RGBLIGHT_ENABLE = yes
 BACKLIGHT_ENABLE = yes
-COMBO_ENABLE = no
 CONSOLE_ENABLE = no
 ENCODER_ENABLE = no
+
+# GBOARD Combos
+VPATH  +=  keyboards/gboards/
+COMBO_ENABLE = yes
