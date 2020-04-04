@@ -28,5 +28,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_VAL_STEP 8
 
 //combo count for arstneio colemak asetniop modification
-#define COMBO_COUNT 61
-#define EXTRA_EXTRA_LONG_COMBOS
+//#define COMBO_COUNT 61
+//#define EXTRA_EXTRA_LONG_COMBOS
