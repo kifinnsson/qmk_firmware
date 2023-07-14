@@ -1,3 +1,4 @@
+
 /*
 Copyright 2017 Danny Nguyen <danny@keeb.io>
 
@@ -20,3 +21,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define EE_HANDS
 
 #define LAYER_STATE_8BIT
+
+#define DEBOUNCE 10
+
+//#define NO_PRINT
+
+//#define NO_DEBUG
+
+#define NO_ACTION_TAPPING
+
+#define NO_ACTION_ONESHOT
+
+#define FORCE_NKRO
+
+
